@@ -136,6 +136,11 @@ ul, ol {
     padding: 60px 0;
 }
 
+section.cta-section {
+    padding: 0 80px;
+    text-align: center;
+}
+
 .section-alt {
     padding: 60px 0;
     background-color: #f8f9fa;
