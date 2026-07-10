@@ -55,8 +55,13 @@
     font-size: 0.9rem;
 }
 
-.sidebar-widget ul li a:hover {
+.sidebar-widget ul li a:hover,
+.sidebar-widget ul li a.active {
     color: #3b82f6;
+}
+
+.sidebar-widget ul li a.active {
+    font-weight: 600;
 }
 
 /* Tags cloud */
@@ -225,9 +230,28 @@
     transition: all 0.2s;
 }
 
-.pagination a:hover {
+.pagination a:hover,
+.pagination .pagination-more:hover {
     background-color: #f3f4f6;
     text-decoration: none;
+}
+
+.pagination .pagination-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #e5e7eb;
+    color: #374151;
+    background: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
 }
 
 .pagination .active {
