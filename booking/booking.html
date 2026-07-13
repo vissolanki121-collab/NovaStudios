@@ -446,11 +446,20 @@
             // 4. Form Submit & Modal Actions
             bookingForm.addEventListener('submit', (e) => {
                 e.preventDefault();
-                if (!visitDate.value || checkPastDate(visitDate.value)) {
-                    dateModal.style.display = 'flex';
-                    return;
+
+                const hasAccount = localStorage.getItem("themeParkAccount");
+
+                if (!hasAccount) {
+                const currentPage = encodeURIComponent(window.location.pathname + window.location.search);
+                window.location.href = "../auth/signup.html?redirect=" + currentPage;
+                return;
                 }
-                successModal.style.display = 'flex';
+                if (!visitDate.value || checkPastDate(visitDate.value)) {
+                dateModal.style.display = "flex";
+                return;
+                }
+
+                successModal.style.display = "flex";
             });
 
             closeModal.addEventListener('click', () => {
