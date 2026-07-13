@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta
         name="description"
-        content="Create your Nova+ account and start streaming."
+        content="Sign in to Nova+ and continue your Nova Studios streaming experience."
     >
 
-    <title>Create Account | Nova+</title>
+    <title>Sign In | Nova+</title>
 
     <link rel="stylesheet" href="../css/auth-login.css">
 </head>
@@ -26,38 +25,25 @@
             </a>
         </header>
 
-        <section class="auth-content" aria-labelledby="signup-title">
+        <section class="auth-content" aria-labelledby="login-title">
             <div class="login-card">
                 <div class="nova-plus-mark" aria-hidden="true">
                     NOVA<span>+</span>
                 </div>
 
-                <h1 id="signup-title">Create account</h1>
+                <h1 id="login-title">Welcome back</h1>
 
                 <p class="login-subtitle">
-                    Join Nova+ and start your streaming experience
+                    Sign in to continue watching on Nova+
                 </p>
 
-                <form id="signupForm" class="login-form">
+                <form id="loginForm" class="login-form">
                     <div class="form-group">
-                        <label for="signupName">Name</label>
-
-                        <input
-                            type="text"
-                            id="signupName"
-                            name="name"
-                            placeholder="Enter your name"
-                            autocomplete="name"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="signupEmail">Email address</label>
+                        <label for="email">Email address</label>
 
                         <input
                             type="email"
-                            id="signupEmail"
+                            id="email"
                             name="email"
                             placeholder="name@example.com"
                             autocomplete="email"
@@ -66,22 +52,22 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="signupPassword">Password</label>
+                        <label for="password">Password</label>
 
                         <div class="password-field">
                             <input
                                 type="password"
-                                id="signupPassword"
+                                id="password"
                                 name="password"
-                                placeholder="Create a password"
-                                autocomplete="new-password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
                                 minlength="6"
                                 required
                             >
 
                             <button
                                 type="button"
-                                id="signupPasswordToggle"
+                                id="togglePassword"
                                 class="password-toggle"
                                 aria-label="Show password"
                                 aria-pressed="false"
@@ -91,22 +77,37 @@
                         </div>
                     </div>
 
+                    <div class="form-options">
+                        <label class="remember-option">
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                                name="rememberMe"
+                            >
+                            <span>Remember me</span>
+                        </label>
+
+                        <a href="#" class="forgot-link">
+                            Forgot password?
+                        </a>
+                    </div>
+
                     <p
-                        id="signupError"
+                        id="loginError"
                         class="login-error"
                         role="alert"
                         aria-live="polite"
                     ></p>
 
                     <button type="submit" class="sign-in-button">
-                        Create Account
+                        Sign In
                     </button>
                 </form>
 
                 <p class="signup-text">
-                    Already have Nova+?
-                    <a href="./login.html">
-                        Sign in
+                    New to Nova+?
+                    <a href="#" id="createAccountLink">
+                        Create an account
                     </a>
                 </p>
 
