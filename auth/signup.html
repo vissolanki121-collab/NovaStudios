@@ -239,7 +239,7 @@
                                         <option value="premium">Premium - $19.99/month</option>
                                     </select>
                                 </div>
-                            </div>
+                            
 
                             <div class="form-group" data-i18n-html="auth_signup.payment_method_choose_a_payment_met">
                                 <label for="payment" data-i18n="auth_signup.payment_method">Payment Method</label>
@@ -387,11 +387,26 @@
             });
 
             form.addEventListener('submit', function (event) {
-                event.preventDefault();
+                // Let the browser validate the form first
+                if (!form.checkValidity()) {
+                return;
+                }
+                 event.preventDefault();
+
+                localStorage.setItem("themeParkAccount", "true");
+
                 status.hidden = false;
-                form.reset();
-                planSelect.value = initialPlan && plans[initialPlan] ? initialPlan : 'standard';
-                updateSummary(planSelect.value);
+
+                setTimeout(() => {
+                const params = new URLSearchParams(window.location.search);
+                const redirect = params.get("redirect");
+
+                if (redirect) {
+                window.location.href = decodeURIComponent(redirect);
+                } else {
+                window.location.href = "../booking/booking.html";
+                }
+                }, 1500);
             });
             document.getElementById("toggle-password").onclick = function () {
                 const p = document.getElementById("password");

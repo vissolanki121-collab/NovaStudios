@@ -392,7 +392,7 @@ window.translations.en = {
         "quantity_1_1": "<span>Quantity</span>\n                        <strong id=\"summary-qty\">1</strong>",
         "select_a_date": "Select a date",
         "select_theme_park": "Select Theme Park",
-        "select_theme_park_choose_a_park_sta": "<label for=\"park-select\">Select Theme Park</label>\n                        <select id=\"park-select\" class=\"form-control\" required=\"\">\n                            <option value=\"\" disabled=\"\" selected=\"\">-- Choose a Park --</option>\n                            <option value=\"orlando\">Stardust Kingdom — Orlando, FL</option>\n                            <option value=\"paris\">Nova World — Paris, France</option>\n                            <option value=\"shanghai\">Dreamscape — Shanghai, China</option>\n                            <option value=\"sydney\">Adventure Isles — Sydney, Australia</option>\n                        </select>",
+        "select_theme_park_choose_a_park_sta": "<label for=\"park-select\">Select Theme Park</label>\n                        <select id=\"park-select\" class=\"form-control\" required=\"\">\n                            <option value=\"\" disabled=\"\" selected=\"\">-- Choose a Park --</option>\n                            <option value=\"orlando\">Stardust Kingdom — Orlando, FL</option>\n                            <option value=\"paris\">Nova World — Paris, France</option>\n                            <option value=\"shanghai\">Dreamscape — Shanghai, China</option>\n                            <option value=\"sydney\">Adventure Isles — Sydney, Australia</option>\n                            <option value=\"novafan\">NovaFan Con 2025</option>\n                            <option value=\"premiere\">The Last Kingdom — World Premiere</option>\n                        </select>",
         "select_ticket_type": "Select Ticket Type",
         "select_visit_date": "<label for=\"visit-date\">Select Visit Date</label>\n                        <input type=\"date\" id=\"visit-date\" class=\"form-control\" required=\"\">",
         "select_visit_date_1": "Select Visit Date",
@@ -407,7 +407,12 @@ window.translations.en = {
         "total_inc_tax": "Total (inc. Tax)",
         "total_inc_tax_106_92": "<span>Total (inc. Tax)</span>\n                        <strong id=\"summary-total\">$106.92</strong>",
         "unlimited_entry_to_all_domestic_par": "Unlimited entry to all domestic parks for 365 days.",
-        "your_ticket_reservation_has_been_su": "Your ticket reservation has been successfully completed. A confirmation email with details and barcodes has been sent to your address."
+        "your_ticket_reservation_has_been_su": "Your ticket reservation has been successfully completed. A confirmation email with details and barcodes has been sent to your address.",
+        "novafan_con_2025": "NovaFan Con 2025",
+        "the_last_kingdom_world_premiere": "The Last Kingdom — World Premiere",
+        "invalid_date": "Invalid Date",
+        "select_upcoming_dates": "Select upcoming dates",
+        "ok": "OK"
     },
     "common": {},
     "company_careers": {
@@ -813,11 +818,12 @@ window.translations.en = {
         "send_us_a_message": "Send Us a Message",
         "skip_to_main_content": "Skip to main content",
         "subject": "Subject",
-        "subject_select_a_topic_press_inquir": "<label for=\"subject\">Subject</label>\n                                <select id=\"subject\" name=\"subject\" class=\"form-control\" required=\"\">\n                                    <option value=\"\">Select a topic...</option>\n                                    <option value=\"press\">Press Inquiry</option>\n                                    <option value=\"partnership\">Partnership</option>\n                                    <option value=\"careers\">Careers</option>\n                                    <option value=\"streaming\">Nova+ Support</option>\n                                    <option value=\"parks\">Theme Parks</option>\n                                    <option value=\"general\">General Question</option>\n                                </select>",
+        "subject_select_a_topic_press_inquir": "<label for=\"subject\">Subject</label>\n                                <select id=\"subject\" name=\"subject\" class=\"form-control\" required=\"\">\n                                    <option value=\"\">Select a topic...</option>\n                                    <option value=\"press\">Press Inquiry</option>\n                                    <option value=\"partnership\">Partnership</option>\n                                    <option value=\"careers\">Careers</option>\n                                    <option value=\"streaming\">Nova+ Support</option>\n                                    <option value=\"parks\">Theme Parks</option>\n                                    <option value=\"workshop\">Animation Workshop</option>\n                                    <option value=\"general\">General Question</option>\n                                </select>",
         "tell_us_how_we_can_help_placeholder": "Tell us how we can help...",
         "text_8xc8x": "&gt;",
         "thank_you_your_message_has_been_rec": "Thank you. Your message has been received and the form has been cleared.",
         "theme_parks": "Theme Parks",
+        "animation_workshop": "Animation Workshop",
         "we_d_love_to_hear_from_you_reach_ou": "We'd love to hear from you. Reach out for press inquiries, partnership opportunities, or general questions."
     },
     "entertainment_animation": {
@@ -1864,7 +1870,12 @@ window.translations.en = {
         "virtual": "Virtual",
         "virtual_1": "<span class=\"badge badge-success\">Virtual</span>",
         "workshop": "Workshop",
-        "workshop_register": "<span class=\"tag\">Workshop</span>\n                            <a href=\"#\" class=\"btn btn-sm btn-primary\">Register</a>"
+        "workshop_register": "<span class=\"tag\">Workshop</span>\n                            <a href=\"#\" class=\"btn btn-sm btn-primary\">Register</a>",
+        "event_info": "Event Information",
+        "june_1_august_31_2025_stardust_king_clean": "June 1 - August 31, 2025",
+        "stardust_kingdom_orlando": "Stardust Kingdom, Orlando",
+        "update_notification": "You will be updated as soon as new updates are out.",
+        "close": "Close"
     },
     "entertainment_merchandise": {
         "14_99": "$14.99",
@@ -2717,7 +2728,35 @@ window.translations.en = {
         "yes_offline_downloads_are_available": "Yes, offline downloads are available on Standard and Premium plans. You can download up to 25 titles at a time on iOS and Android devices. Downloads expire after 30 days or 48 hours after you start watching, whichever comes first.",
         "yes_we_offer_several_annual_pass_op": "Yes, we offer several annual pass options:",
         "yes_we_ship_to_over_50_countries_wo": "Yes, we ship to over 50 countries worldwide. International shipping rates and delivery times vary by destination. Orders over $100 qualify for free standard shipping in the US and Canada.",
-        "you_can_cancel_your_nova_subscripti": "You can cancel your Nova+ subscription at any time through your account settings. Your access will continue until the end of your current billing period. No cancellation fees apply."
+
+        "billing": "Billing",
+        "what_payment_methods_do_you_accept": "What payment methods do you accept? <span>+</span>",
+        "we_accept_major_credit_and_debit_cards": "We accept major credit and debit cards, including Visa, Mastercard, and American Express. Available payment methods may vary depending on your region.",
+
+        "when_will_i_be_charged_for_my_purchase": "When will I be charged for my purchase? <span>+</span>",
+        "payments_are_processed_immediately_after": "Payments are processed immediately after your order is successfully placed. Once payment is confirmed, you will receive a confirmation email with your purchase details.",
+
+        "what_should_i_do_if_my_payment_fails": "What should I do if my payment fails? <span>+</span>",
+        "verify_that_your_payment_details_are_correct": "Verify that your payment details are correct and ensure your payment method has sufficient funds. If the issue persists, try another payment method or contact your financial institution for assistance.",
+
+        "can_i_request_a_refund": "Can I request a refund? <span>+</span>",
+        "refund_eligibility_depends_on_the_product": "Refund eligibility depends on the product or service purchased and the applicable refund policy. Please review the terms at the time of purchase or contact our support team for assistance.",
+
+        "you_can_cancel_your_nova_subscripti": "You can cancel your Nova+ subscription at any time through your account settings. Your access will continue until the end of your current billing period. No cancellation fees apply.",
+        "account_security": "Account & Security",
+
+        "why_should_i_create_a_nova_account": "Why should I create a Nova Studios account? <span>+</span>",
+        "creating_a_nova_studios_account_allows_you": "Creating a Nova Studios account allows you to purchase theme park tickets, manage your bookings, access Nova+ services, and enjoy a more personalized experience across our platform.",
+
+        "is_my_personal_information_secure": "Is my personal information secure? <span>+</span>",
+        "we_take_the_security_of_your_personal_information_seriously": "Yes. We take the security of your personal information seriously and use industry-standard security practices to help protect your account and personal data. We also recommend keeping your login credentials private and using a strong password.",
+
+        "can_i_change_the_email_address_associated_with_my_account": "Can I change the email address associated with my account? <span>+</span>",
+        "if_account_management_features_are_available": "Yes. If account management features are available, you can update your email address through your account settings. If you experience any issues, please contact our support team for assistance.",
+
+        "why_am_i_required_to_create_an_account_before_purchasing_theme_park_tickets": "Why am I required to create an account before purchasing theme park tickets? <span>+</span>",
+        "creating_an_account_helps_us_securely_manage_your_ticket_purchases": "Creating an account helps us securely manage your ticket purchases, store your booking information, and make it easier to access or manage your reservations in the future."
+
     },
     "support_help": {
         "account_security": "Account &amp; Security",

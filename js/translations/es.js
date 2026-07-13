@@ -392,7 +392,7 @@ window.translations.es = {
         "quantity_1_1": "<span>Cantidad</span>\n                        <strong id=\"summary-qty\">1</strong>",
         "select_a_date": "Seleccione una fecha",
         "select_theme_park": "Seleccionar parque temático",
-        "select_theme_park_choose_a_park_sta": "<label for=\"park-select\">Seleccionar parque temático</label>\n                        <seleccione id=\"park-select\" class=\"form-control\" requerido=\"\">\n                            <option value=\"\"disable=\"\" selected=\"\">-- Elija un parque --</option>\n                            <option value=\"orlando\">Reino de Stardust: Orlando, Florida</option>\n                            <option value=\"paris\">Nova World — París, Francia</option>\n                            <option value=\"shanghai\">Paisaje de ensueño: Shanghái, China</option>\n                            <option value=\"sydney\">Islas de la Aventura: Sídney, Australia</option>\n                        </seleccionar>",
+        "select_theme_park_choose_a_park_sta": "<label for=\"park-select\">Seleccionar parque temático</label>\n                        <select id=\"park-select\" class=\"form-control\" required=\"\">\n                            <option value=\"\" disabled=\"\" selected=\"\">-- Elija un parque --</option>\n                            <option value=\"orlando\">Reino de Stardust: Orlando, Florida</option>\n                            <option value=\"paris\">Nova World — París, Francia</option>\n                            <option value=\"shanghai\">Paisaje de ensueño: Shanghái, China</option>\n                            <option value=\"sydney\">Islas de la Aventura: Sídney, Australia</option>\n                            <option value=\"novafan\">NovaFan Con 2025</option>\n                            <option value=\"premiere\">El último reino — Estreno mundial</option>\n                        </select>",
         "select_ticket_type": "Seleccione el tipo de billete",
         "select_visit_date": "<label for=\"visit-date\">Seleccione fecha de visita</label>\n                        <tipo de entrada=\"fecha\" id=\"fecha-visita\" clase=\"control-formulario\" requerido=\"\">",
         "select_visit_date_1": "Seleccionar fecha de visita",
@@ -407,7 +407,12 @@ window.translations.es = {
         "total_inc_tax": "Total (impuestos incluidos)",
         "total_inc_tax_106_92": "<span>Total (impuestos incluidos)</span>\n                        <strong id=\"summary-total\">$106,92</strong>",
         "unlimited_entry_to_all_domestic_par": "Entrada ilimitada a todos los parques nacionales durante los 365 días.",
-        "your_ticket_reservation_has_been_su": "La reserva de su billete se ha completado con éxito. Se ha enviado a su dirección un correo electrónico de confirmación con detalles y códigos de barras."
+        "your_ticket_reservation_has_been_su": "La reserva de su billete se ha completado con éxito. Se ha enviado a su dirección un correo electrónico de confirmación con detalles y códigos de barras.",
+        "novafan_con_2025": "NovaFan Con 2025",
+        "the_last_kingdom_world_premiere": "El último reino — Estreno mundial",
+        "invalid_date": "Fecha no válida",
+        "select_upcoming_dates": "Seleccione fechas futuras",
+        "ok": "Aceptar"
     },
     "common": {},
     "company_careers": {
@@ -813,11 +818,12 @@ window.translations.es = {
         "send_us_a_message": "Envíanos un mensaje",
         "skip_to_main_content": "Saltar al contenido principal",
         "subject": "Sujeto",
-        "subject_select_a_topic_press_inquir": "<label for=\"subject\">Asunto</label>\n                                <seleccione id=\"asunto\" nombre=\"asunto\" clase=\"control-formulario\" requerido=\"\">\n                                    <option value=\"\">Seleccione un tema...</option>\n                                    <option value=\"press\">Consulta de prensa</option>\n                                    <option value=\"partnership\">Asociación</option>\n                                    <option value=\"careers\">Carreras</option>\n                                    <option value=\"streaming\">Soporte Nova+</option>\n                                    <option value=\"parks\">Parques Temáticos</option>\n                                    <option value=\"general\">Pregunta general</option>\n                                </seleccionar>",
+        "subject_select_a_topic_press_inquir": "<label for=\"subject\">Asunto</label>\n                                <select id=\"asunto\" name=\"asunto\" class=\"form-control\" required=\"\">\n                                    <option value=\"\">Seleccione un tema...</option>\n                                    <option value=\"press\">Consulta de prensa</option>\n                                    <option value=\"partnership\">Asociación</option>\n                                    <option value=\"careers\">Carreras</option>\n                                    <option value=\"streaming\">Soporte Nova+</option>\n                                    <option value=\"parks\">Parques Temáticos</option>\n                                    <option value=\"workshop\">Taller de animación</option>\n                                    <option value=\"general\">Pregunta general</option>\n                                </select>",
         "tell_us_how_we_can_help_placeholder": "Cuéntanos cómo podemos ayudarte...",
         "text_8xc8x": ">",
         "thank_you_your_message_has_been_rec": "Gracias. Su mensaje ha sido recibido y el formulario ha sido borrado.",
         "theme_parks": "Parques Temáticos",
+        "animation_workshop": "Taller de animación",
         "we_d_love_to_hear_from_you_reach_ou": "Nos encantaría saber de usted. Comuníquese para consultas de prensa, oportunidades de asociación o preguntas generales."
     },
     "entertainment_animation": {
@@ -1864,7 +1870,12 @@ window.translations.es = {
         "virtual": "Virtual",
         "virtual_1": "<span class=\"badge badge-success\">Virtual</span>",
         "workshop": "Taller",
-        "workshop_register": "<span class=\"tag\">Taller</span>\n                            <a href=\"#\" class=\"btn btn-sm btn-primary\">Registrarse</a>"
+        "workshop_register": "<span class=\"tag\">Taller</span>\n                            <a href=\"#\" class=\"btn btn-sm btn-primary\">Registrarse</a>",
+        "event_info": "Información del evento",
+        "june_1_august_31_2025_stardust_king_clean": "1 de junio - 31 de agosto de 2025",
+        "stardust_kingdom_orlando": "Reino de Stardust, Orlando",
+        "update_notification": "Se le informará tan pronto como salgan nuevas actualizaciones.",
+        "close": "Cerrar"
     },
     "entertainment_merchandise": {
         "14_99": "$14.99",
@@ -2717,7 +2728,33 @@ window.translations.es = {
         "yes_offline_downloads_are_available": "Sí, las descargas sin conexión están disponibles en los planes Estándar y Premium. Puedes descargar hasta 25 títulos a la vez en dispositivos iOS y Android. Las descargas caducan después de 30 días o 48 horas después de comenzar a mirar, lo que ocurra primero.",
         "yes_we_offer_several_annual_pass_op": "Sí, ofrecemos varias opciones de pases anuales:",
         "yes_we_ship_to_over_50_countries_wo": "Sí, enviamos a más de 50 países en todo el mundo. Las tarifas de envío internacional y los tiempos de entrega varían según el destino. Los pedidos superiores a $100 califican para envío estándar gratuito en EE. UU. y Canadá.",
-        "you_can_cancel_your_nova_subscripti": "Puede cancelar su suscripción a Nova+ en cualquier momento a través de la configuración de su cuenta. Su acceso continuará hasta el final de su período de facturación actual. No se aplican gastos de cancelación."
+        "you_can_cancel_your_nova_subscripti": "Puede cancelar su suscripción a Nova+ en cualquier momento a través de la configuración de su cuenta. Su acceso continuará hasta el final de su período de facturación actual. No se aplican gastos de cancelación.",
+        "billing": "Facturación",
+        "what_payment_methods_do_you_accept": "¿Qué métodos de pago aceptan? <span>+</span>",
+        "we_accept_major_credit_and_debit_cards": "Aceptamos las principales tarjetas de crédito y débito, incluidas Visa, Mastercard y American Express. Los métodos de pago disponibles pueden variar según tu región.",
+
+        "when_will_i_be_charged_for_my_purchase": "¿Cuándo se realizará el cargo por mi compra? <span>+</span>",
+        "payments_are_processed_immediately_after": "Los pagos se procesan inmediatamente después de que tu compra se realiza correctamente. Una vez confirmado el pago, recibirás un correo electrónico con los detalles de tu compra.",
+
+        "what_should_i_do_if_my_payment_fails": "¿Qué debo hacer si mi pago falla? <span>+</span>",
+        "verify_that_your_payment_details_are_correct": "Verifica que los datos de tu pago sean correctos y que tu método de pago tenga fondos suficientes. Si el problema persiste, prueba con otro método de pago o ponte en contacto con tu entidad financiera.",
+
+        "can_i_request_a_refund": "¿Puedo solicitar un reembolso? <span>+</span>",
+        "refund_eligibility_depends_on_the_product": "La elegibilidad para un reembolso depende del producto o servicio adquirido y de la política de reembolso correspondiente. Consulta los términos en el momento de la compra o ponte en contacto con nuestro equipo de soporte para obtener ayuda.",
+        "account_security": "Cuenta y Seguridad",
+
+        "why_should_i_create_a_nova_account": "¿Por qué debería crear una cuenta de Nova Studios? <span>+</span>",
+        "creating_a_nova_studios_account_allows_you": "Crear una cuenta de Nova Studios te permite comprar entradas para los parques temáticos, administrar tus reservas, acceder a los servicios de Nova+ y disfrutar de una experiencia más personalizada en nuestra plataforma.",
+
+        "is_my_personal_information_secure": "¿Está segura mi información personal? <span>+</span>",
+        "we_take_the_security_of_your_personal_information_seriously": "Sí. Nos tomamos muy en serio la seguridad de tu información personal y utilizamos prácticas de seguridad estándar de la industria para ayudar a proteger tu cuenta y tus datos personales. También te recomendamos mantener privadas tus credenciales de inicio de sesión y utilizar una contraseña segura.",
+
+        "can_i_change_the_email_address_associated_with_my_account": "¿Puedo cambiar la dirección de correo electrónico asociada a mi cuenta? <span>+</span>",
+        "if_account_management_features_are_available": "Sí. Si las funciones de administración de la cuenta están disponibles, puedes actualizar tu dirección de correo electrónico desde la configuración de tu cuenta. Si tienes algún problema, ponte en contacto con nuestro equipo de soporte para obtener ayuda.",
+
+        "why_am_i_required_to_create_an_account_before_purchasing_theme_park_tickets": "¿Por qué debo crear una cuenta antes de comprar entradas para los parques temáticos? <span>+</span>",
+        "creating_an_account_helps_us_securely_manage_your_ticket_purchases": "Crear una cuenta nos ayuda a gestionar de forma segura la compra de tus entradas, almacenar la información de tus reservas y facilitar el acceso o la administración de tus reservas en el futuro."
+
     },
     "support_help": {
         "account_security": "Cuenta y seguridad",
